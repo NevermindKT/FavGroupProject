@@ -23,7 +23,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
 
-    background-image: url("/src/pics/Sum-41-Logo.svg");
+    background-image: url("public/Sum-41-Logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
