@@ -6,11 +6,14 @@ function MemberModal({ member, onClose }) {
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <div className="modal-info">
                     <h2>{member.name}</h2>
-                    <p className="scroll-box"> {
-                        member.bio.split('\n').map((line, index) => (
-                        <p key={index}>{line}</p>
-                    )) || "Описание участника группы."
-                    }</p>
+                    <div className="scroll-box">
+                        {member.bio
+                            ? member.bio.split('\n').map((line, index) => (
+                                <p key={index}>{line}</p>
+                            ))
+                            : <p>Описание участника группы.</p>
+                        }
+                    </div>
                 </div>
                 <img src={member.img} alt={member.name} className="modal-photo" />
             </div>

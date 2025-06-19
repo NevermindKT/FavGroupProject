@@ -7,7 +7,14 @@ function CoverModal({album, onClose}) {
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <div className="modal-info">
                     <h2>{album.name}</h2>
-                    <p>{album.desc || "Описание альбома группы."}</p>
+                    <div className="scroll-box">
+                        {album.desc
+                            ? album.desc.split('\n').map((line, index) => (
+                                <p key={index}>{line}</p>
+                            ))
+                            : <p>Описание альбома группы.</p>
+                        }
+                    </div>
                 </div>
                 <img src={album.img} alt={album.name} className="modal-album-photo" />
             </div>
