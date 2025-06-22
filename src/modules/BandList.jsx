@@ -1,6 +1,6 @@
 import React from "react";
-import MemberModal from "./MemberModal";
 import members from "../info/data/members.js";
+import WindowModal from "./modal/ModalWindow.jsx";
 
 function BandList() {
     const [selectedMember, setSelectedMember] = React.useState(null);
@@ -23,7 +23,7 @@ function BandList() {
                 ))}
             </ul>
 
-            <MemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />
+            <WindowModal data={selectedMember} onClose={() => setSelectedMember(null)} type={"member"} />
         </section>
     );
 }

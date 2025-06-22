@@ -1,6 +1,6 @@
 import React from "react";
-import CoverModal from "./CoverModal.jsx";
 import {albums} from "../info/data/tracks.js";
+import WindowModal from "./modal/ModalWindow.jsx";
 
 function AlbumCovers() {
     const [selectedAlbum, setSelectedAlbum] = React.useState(null);
@@ -14,7 +14,7 @@ function AlbumCovers() {
                 ))}
             </div>
 
-            <CoverModal album={selectedAlbum} onClose={() => setSelectedAlbum(null)}/>
+            <WindowModal data={selectedAlbum} onClose={() => setSelectedAlbum(null)} type={"album"} />
         </section>
     )
 }

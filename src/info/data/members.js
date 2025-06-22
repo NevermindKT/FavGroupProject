@@ -4,7 +4,7 @@ import jasonImg from "../../pics/Sum_41_-_Southside_Festival_2024_-_1DX_2951.jpg
 import tomImg from "../../pics/Sum_41_-_Southside_Festival_2024_-_DSC2943.jpg";
 import zummoImg from "../../pics/Sum_41_-_Southside_Festival_2024_-_1DX_2926.jpg";
 
-const memberBio = [
+const memberDesc = [
     // Deryck
     "Дерик Уибли родился 21 марта 1980 года в Скарборо, в восточной части Торонто, его мама Мишель Уибли родила Дерика, когда ей было семнадцать лет, так и не окончив школу.\n" +
     " Своего отца он никогда не видел, но отец его видел только непродолжительное время сразу после рождения." +
@@ -37,35 +37,35 @@ const members = [
         role: "вокал, ритм-гитара, клавишные, соло-гитара, бэк-вокал",
         joined: "1996",
         img: deryckImg,
-        bio: memberBio[0],
+        desc: memberDesc[0],
     },
     {
         name: "Дэвид Низам Бэкш",
         role: "соло-гитара, бэк-вокал",
         joined: "1996",
         img: davidImg,
-        bio: memberBio[1],
+        desc: memberDesc[1],
     },
     {
         name: "Джейсон Паул МакКэслин",
         role: "бас-гитара, бэк-вокал",
         joined: "1999",
         img: jasonImg,
-        bio: memberBio[2],
+        desc: memberDesc[2],
     },
     {
         name: "Томас Арнольд Такер",
         role: "ритм/соло-гитара, клавишные, бэк-вокал",
         joined: "2009",
         img: tomImg,
-        bio: memberBio[3],
+        desc: memberDesc[3],
     },
     {
         name: "Фрэнк Зуммо",
         role: "ударные, перкуссия, редко бэк-вокал",
         joined: "2015",
         img: zummoImg,
-        bio: memberBio[4],
+        desc: memberDesc[4],
     },
 ];
 
